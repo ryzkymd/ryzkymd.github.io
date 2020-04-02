@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- MDB -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/css/mdb.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Monitoring Covid-19</title>
+</head>
+
+<body>
+    <div class="container mb-4 border-white text-center mt-5 mb-5">
+
+        <h1 class="display-4">MONITORING REAL-TIME COVID-19</h1>
+        <h3>Coronavirus Global dan Indonesia</h3>
+        <p class="text-center font-weight-light last-update"></p>
+
+    </div>
+
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col-md-4 col-sm-12 mb-3">
+                <div class="card shadow ripe-malinka-gradient mx-sm-1 p-3 text-white text-center">
+                    <span><img class="emoticon img-fluid" src="img/sad.svg"></span>
+                    <div class="mt-3">
+                        <h5>POSITIF</h5>
+                        <h1 class="positive"></h1>
+                        <h5>ORANG</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 mb-3">
+                <div class="card shadow aqua-gradient mx-sm-1 p-3 text-white text-center">
+                    <span><img class="emoticon" src="img/happy.svg"></span>
+                    <div class="mt-3">
+                        <h5>SEMBUH</h5>
+                        <h1 class="recovered"></h1>
+                        <h5>ORANG</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 mb-3">
+                <div class="card shadow peach-gradient mx-sm-1 p-3 text-white text-center">
+                    <span><img class="emoticon" src="img/cry.svg"></span>
+                    <div class="mt-3">
+                        <h5>MENINGGAL</h5>
+                        <h1 class="died"></h1>
+                        <h5>ORANG</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col">
+                <div class="card shadow blue-gradient p-3 text-white text-center">
+                    <div class="text-center mb-3">
+                        <img class="img-indo" src="img/indonesia.svg">
+                        <!-- <img src="img/indonesia.svg" class="card-img-top img-indo" alt="..."> -->
+                    </div>
+                    <div class="card-body p-0">
+                        <!-- <h5 class="card-title">INDONESIA</h5> -->
+                        <div class="row">
+                            <div class="col">
+                                <p>POSITIF</p>
+                                <h2 class="indo-pos"></h2>
+                                <p>ORANG</p>
+                            </div>
+                            <div class="col">
+                                <p>SEMBUH</p>
+                                <h2 class="indo-rec"></h2>
+                                <p>ORANG</p>
+                            </div>
+                            <div class="col">
+                                <p>MENINGGAL</p>
+                                <h2 class="indo-dea"></h2>
+                                <p>ORANG</p>
+                            </div>
+                            <div class="col">
+                                <p>AKTIF</p>
+                                <h2 class="indo-act"></h2>
+                                <p>ORANG</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col">
+                <div class="card shadow">
+                    <div class="card-header font-weight-bold">
+                        Data Kasus Coronavirus di Indonesia Berdasarkan Provinsi
+                    </div>
+                    <div class="card-body table-prov">
+                        <div class="table-wrapper-scroll-y my-custom-scrollbar">
+                            <table class="table table-bordered table-hover table-prov">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">NO.</th>
+                                        <th scope="col">PROVINSI</th>
+                                        <th scope="col">POSITIF</th>
+                                        <th scope="col">SEMBUH</th>
+                                        <th scope="col">MENINGGAL</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tb-prov">
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col">
+                <div class="card shadow">
+                    <div class="card-header font-weight-bold">
+                        Data Kasus Coronavirus Global
+                    </div>
+                    <div class="card-body table-country">
+                        <div class="table-wrapper-scroll-y my-custom-scrollbar">
+                            <table class="table table-bordered table-hover table-prov">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">NO.</th>
+                                        <th scope="col">NEGARA</th>
+                                        <th scope="col">POSITIF</th>
+                                        <th scope="col">SEMBUH</th>
+                                        <th scope="col">MENINGGAL</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tb-country">
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p class="font-weight-light text-center mt-4 mb-4">Made with &hearts; by <a
+            href="https://www.instagram.com/rizkyvisual/">Rizky</a></p>
+
+    <!-- MDB JS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/js/mdb.min.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

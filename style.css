@@ -1,0 +1,42 @@
+body {
+    position: relative;
+}
+
+/* .my-card
+{
+    position:absolute;
+    left:38%;
+    top:-40px;
+    border-radius: 100%;
+    margin: 0;
+    padding: 0;
+} */
+
+.emoticon {
+    width: 90px;
+    height: 90px;
+}
+
+/* .my-card-indo
+{
+    position:absolute;
+    left:44%;
+    top:-40px;
+    border-radius:50%;
+    margin: 0;
+    padding: 0;
+} */
+
+.img-indo {
+    width: 100px;
+    height: 100px;
+}
+
+.my-custom-scrollbar {
+    position: relative;
+    height: 500px;
+    overflow: auto;
+}
+.table-wrapper-scroll-y {
+    display: block;
+}
